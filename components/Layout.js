@@ -4,7 +4,7 @@ export default function Layout(props) {
     return (
         <div>
             <header>
-                <Link href="/"><a>ChildSafeMedia&trade;</a></Link>
+                <div className="brand"><Link href="/"><a>ChildSafeMedia&trade;</a></Link></div>
                 <ul className="menu">
                     <li><Link href="/media"><a>Media Reviews</a></Link></li>
                 </ul>
@@ -12,13 +12,7 @@ export default function Layout(props) {
             <main>
                 {props.children}
             </main>
-            <style global jsx>{
-                `body {
-                    padding: 0;
-                    margin: 0;
-                    font-family: Verdana;
-                }
-                
+            <style global jsx>{`        
                 header {
                     box-sizing: border-box;
                     background-color: navy;
@@ -35,6 +29,10 @@ export default function Layout(props) {
                     padding-right: 24px;
                 }
 
+                .brand {
+                    font-size: 36px;
+                }
+
                 header a {
                     color: #eee;
                     text-decoration: none;
@@ -42,6 +40,9 @@ export default function Layout(props) {
 
                 header a:hover {
                     color: white;
+                }
+
+                .menu a:hover {
                     text-decoration: underline;
                 }
 
