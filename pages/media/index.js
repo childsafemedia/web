@@ -1,17 +1,18 @@
 import contentful from '../../lib/contentful';
+import Layout from '../../components/Layout';
 
 export default function Index(props) {
     const { items } = props;
 
     return (
-        <div>
-            <h1>Display list of media reviews from Contentful</h1>
+        <Layout>
+            <h1>Media Reviews</h1>
             <ul>
             {items && items.length ? items.map(item => (
                 <li key={item.slug}>{item.title}</li>
             )) : null}
             </ul>
-        </div>
+        </Layout>
     );
 }
 

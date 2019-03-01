@@ -51,7 +51,7 @@ export default function Layout(props) {
                 }
 
                 main {
-                    padding-top: 80px;
+                    padding: 80px 24px;
                     width: 100%;
                     min-height: 100vh;
                     box-sizing: border-box;
