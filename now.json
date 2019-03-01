@@ -1,6 +1,8 @@
 {
     "version": 2,
-    "builds": [
-      { "src": "package.json", "use": "@now/next" }
+    "builds": [{ "src": "package.json", "use": "@now/next" }],
+    "routes": [
+        { "src": "/media/(?<slug>.+)", "dest": "/media/view?slug=$slug" },
+        { "src": "/(.*)", "dest": "/$1" }
     ]
-  }
+}
