@@ -1,4 +1,5 @@
 module.exports = {
+    target: 'serverless',
     env: {
         CONTENTFUL_SPACE_ID: 'mxki4c5wv2nt',
         CONTENTFUL_ACCESS_TOKEN:
