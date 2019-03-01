@@ -14,7 +14,7 @@ export default function Index(props) {
                           <li key={item.slug}>
                               <Link
                                   as={`/media/${item.slug}`}
-                                  href={`/media/review?slug=${item.slug}`}
+                                  href={`/media/view?slug=${item.slug}`}
                               >
                                   <a>{item.title}</a>
                               </Link>
